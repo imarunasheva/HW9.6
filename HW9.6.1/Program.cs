@@ -29,9 +29,9 @@ namespace HW9._6._1
         {
             while (true)
             {
-                MyException ex1 = new("Ошибка: введите значение от 1 до 11");
+                MyException ex1 = new("Ошибка: введите значение не более 11");
                 FormatException ex2 = new("Ошибка: некорректный формат значения");
-                DivideByZeroException ex3 = new("Ошибка: значение 0 не подходит");
+                DivideByZeroException ex3 = new("Ошибка: значение 0 не подходит для второго числа");
                 OverflowException ex4 = new("Ошибка: слишком большое число");
                 IndexOutOfRangeException ex5 = new("Вы ничего не выиграли");
 
@@ -40,7 +40,7 @@ namespace HW9._6._1
 
                 try
                 {
-                    Console.Write("Введите первое целое число от 1 до 11: ");    
+                    Console.Write("Введите первое целое число от 0 до 11: ");    
                     byte a = byte.Parse(Console.ReadLine());
                     
                     Console.Write("Введите второе целое число от 1 до 11: ");
